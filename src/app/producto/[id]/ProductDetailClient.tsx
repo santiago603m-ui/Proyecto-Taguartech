@@ -1,6 +1,5 @@
 "use client";
 
-import { useParams } from "next/navigation";
 import { motion } from "motion/react";
 import Link from "next/link";
 import Image from "next/image";
@@ -63,11 +62,11 @@ export default function ProductDetailClient({ id }: { id: string }) {
           <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className="relative">
             <div className={`rounded-3xl overflow-hidden shadow-2xl ${materialBgMap[product.material]} p-4`}>
               <div className="relative w-full h-[420px] md:h-[520px]">
-                <Image 
-                  src={product.image} 
-                  alt={product.name} 
-                  fill 
-                  className="object-cover rounded-2xl" 
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover rounded-2xl"
                 />
               </div>
             </div>
@@ -139,11 +138,11 @@ export default function ProductDetailClient({ id }: { id: string }) {
                   <Link href={`/producto/${rel.id}`}
                     className="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
                     <div className="h-48 overflow-hidden relative">
-                      <Image 
-                        src={rel.image} 
-                        alt={rel.name} 
-                        fill 
-                        className="object-cover transition-transform duration-500 group-hover:scale-105" 
+                      <Image
+                        src={rel.image}
+                        alt={rel.name}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     </div>
                     <div className="p-4">
