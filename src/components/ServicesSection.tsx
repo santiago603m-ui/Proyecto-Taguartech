@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";
-import { Store, GraduationCap, Users } from "lucide-react";
 
 const services = [
   {
