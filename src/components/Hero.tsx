@@ -49,16 +49,16 @@ export function Hero() {
           }}
           className="relative h-[50vh] md:h-[70vh] w-full hidden md:block"
         >
-          <div className="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl">
+          <div className="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl ">
             <Image
-              src="/Assets/TaguaCatira.jpeg"
+              src="/Assets/Tagua_Catira.jpeg"
               alt="Artesano trabajando la madera"
               fill
-              className="object-cover object-center"
+              className="object-cover object-center "
               priority
             />
             {/* Soft overlay gradient */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-[#3E2723]/20 to-transparent mix-blend-overlay" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#3E2723]/20 to-transparent mix-blend-overlay " />
           </div>
 
           {/* Decorative floating element */}
@@ -66,9 +66,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="absolute -bottom-8 -left-8 bg-white p-5 rounded-2xl shadow-xl border border-[#F9F6F0] z-10"
+            className="absolute -bottom-8 -left-8 bg-white p-5 rounded-2xl shadow-xl border border-[#F9F6F0] z-10 "
           >
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 ">
               <div className="w-12 h-12 rounded-full bg-[#f2dd9f] flex items-center justify-center ">
                 <span className="text-[#BC6C25] font-bold text-2xl">
                   100%

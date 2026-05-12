@@ -10,7 +10,7 @@ const services = [
     title: "Tienda Artesanal",
     description:
       "Explora nuestra colección curada de joyas, utensilios y esculturas hechas a mano por maestros artesanos.",
-    image: "https://images.unsplash.com/photo-1590736910118-243884803947?q=80&w=600",
+    image: "/Assets/Bandeja_Copas.jpg",
     action: "Ver Catálogo",
     href: "/productos",
     color: "bg-[#FAF9F6]",
@@ -20,7 +20,7 @@ const services = [
     title: "Cursos y Talleres",
     description:
       "Aprende el arte del tallado y el manejo de materiales orgánicos con nuestros expertos en el oficio.",
-    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=600",
+    image: "/Assets/Imagen_Corpo_2.jpeg",
     action: "Consultar Fechas",
     href: "/contacto",
     color: "bg-white",
@@ -30,7 +30,7 @@ const services = [
     title: "Diseño a Medida",
     description:
       "Asesoría personalizada para crear piezas únicas adaptadas a tus necesidades o proyectos de diseño interior.",
-    image: "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=600",
+    image: "/Assets/Nosotros_imagen_2.jpg",
     action: "Agendar Cita",
     href: "/contacto",
     color: "bg-[#FAF9F6]",
@@ -105,15 +105,6 @@ export function ServicesSection() {
               </motion.div>
             );
           })}
-        </div>
-
-        <div className="mt-12 text-center md:hidden lg:block">
-          <Link
-            href="/servicios"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-title text-white rounded-full hover:bg-title/90 transition-all shadow-md"
-          >
-            Ver todos los servicios
-          </Link>
         </div>
       </div>
     </section>
