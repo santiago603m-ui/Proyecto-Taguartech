@@ -16,12 +16,12 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "Taguartech — Innovación y Tecnología",
-    template: "%s | Taguartech",
+    default: "Taguarte-CH — Innovación y Tecnología",
+    template: "%s | Taguarte-CH",
   },
   description: "Expertos en soluciones tecnológicas innovadoras, desarrollo de software y servicios digitales de alta calidad.",
   openGraph: {
-    title: "Taguartech",
+    title: "Taguarte-CH",
     description: "Expertos en soluciones tecnológicas innovadoras.",
     type: "website",
     locale: "es_CO",

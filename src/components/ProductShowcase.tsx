@@ -19,7 +19,7 @@ export function ProductShowcase() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold text-title mb-4"
+              className="text-2xl md:text-3xl font-bold text-title mb-4"
             >
               Vitrina Destacada
             </motion.h2>
@@ -52,7 +52,7 @@ export function ProductShowcase() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               onClick={() => router.push(`/producto/${product.id}`)}
-              className="group relative h-[420px] md:h-[400px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer border-2 border-earth/20"
+              className="group relative h-[460px] md:h-[440px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer border-2 border-earth/20"
             >
               {/* Background Image */}
               <Image
@@ -109,9 +109,7 @@ export function ProductShowcase() {
                     {product.price}
                   </span>
                 </div>
-                <p className="text-white/70 text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Ver detalles
-                </p>
+
               </div>
             </motion.div>
           ))}

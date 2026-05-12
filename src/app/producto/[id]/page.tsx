@@ -12,12 +12,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!product) {
     return {
-      title: "Pieza no encontrada | Taguartech",
+      title: "Pieza no encontrada | Taguarte-CH",
     };
   }
 
   return {
-    title: `${product.name} | Taguartech`,
+    title: `${product.name} | Taguarte-CH`,
     description: product.shortDescription,
     openGraph: {
       title: product.name,

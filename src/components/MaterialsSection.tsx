@@ -39,7 +39,7 @@ export function MaterialsSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-title mb-6"
+            className="text-2xl md:text-3xl font-bold text-title mb-6"
           >
             La Esencia de Nuestra Tierra
           </motion.h2>
@@ -64,7 +64,7 @@ export function MaterialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.2, duration: 0.6 }}
-              className="group flex flex-col md:flex-row bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border-2 border-earth/10"
+              className="group flex flex-col md:flex-row bg-[#F9F6F0] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border-2 border-earth/10"
             >
               <div className="h-64 overflow-hidden relative">
                 <Image

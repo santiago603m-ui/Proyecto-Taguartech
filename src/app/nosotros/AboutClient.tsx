@@ -77,7 +77,7 @@ export default function AboutClient() {
               El Arte de la<br />Materia Natural
             </h1>
             <p className="text-moss/80 text-lg leading-relaxed mb-6">
-              TAGUARTECH nació de la convicción de que los materiales orgánicos —la tagua,
+              TAGUARTE-CH nació de la convicción de que los materiales orgánicos —la tagua,
               la madera, el hueso— merecen ser tratados con el mismo respeto que la piedra
               o el metal precioso. Somos un taller artesanal fundado con la misión de
               preservar técnicas ancestrales y conectarlas con el diseño contemporáneo.
@@ -127,7 +127,7 @@ export default function AboutClient() {
         <div className="container mx-auto px-6 md:px-12">
           <div className="text-center mb-14">
             <span className="text-earth font-semibold tracking-wider text-sm uppercase mb-2 block">Lo que nos guía</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-title">Nuestros Valores</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-title">Nuestros Valores</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v, i) => {
@@ -154,12 +154,14 @@ export default function AboutClient() {
       </section>
 
       {/* Process */}
-      <section className="py-16 container mx-auto px-6 md:px-12">
-        <div className="text-center mb-14">
-          <span className="text-earth font-semibold tracking-wider text-sm uppercase mb-2 block">Cómo trabajamos</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-title">Nuestro Proceso</h2>
+      <section className="py-16 bg-[#F9F6F0]">
+        <div className="container mx-auto px-6 md:px-12 ">
+          <div className="text-center mb-14">
+            <span className="text-earth font-semibold tracking-wider text-sm uppercase mb-2 block">Cómo trabajamos</span>
+            <h2 className="text-2xl md:text-3xl font-bold text-title">Nuestro Proceso</h2>
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
           {processSteps.map((step, i) => (
             <motion.div
               key={step.step}
@@ -195,7 +197,7 @@ export default function AboutClient() {
           viewport={{ once: true }}
           className="rounded-3xl bg-[#3E2723] text-[#F9F6F0] p-12 text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Conoce nuestra colección</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">Conoce nuestra colección</h2>
           <p className="text-[#F9F6F0]/70 mb-8 max-w-md mx-auto">
             Descubre las piezas que nacen de este proceso y lleva a casa un objeto con historia.
           </p>

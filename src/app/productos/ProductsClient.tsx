@@ -148,12 +148,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
             </div>
           )}
 
-          {/* Quick view on hover */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-            <span className="bg-[#F9F6F0]/90 text-[#3E2723] text-sm font-semibold px-5 py-2 rounded-full shadow-md backdrop-blur-sm">
-              Ver detalles
-            </span>
-          </div>
+
         </div>
 
         {/* Info */}

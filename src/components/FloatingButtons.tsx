@@ -26,7 +26,7 @@ export function FloatingButtons() {
     return () => window.removeEventListener("open-email-modal", handleOpenModal);
   }, []);
 
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=Hola%20TAGUARTECH%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20productos.`;
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=Hola%20TAGUARTE-CH%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20productos.`;
 
   const buttons = [
     {
@@ -56,20 +56,45 @@ export function FloatingButtons() {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleEmailSubmit = (e: React.FormEvent) => {
+  const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSending(true);
 
-    // Simulate sending email since no backend is specified
-    setTimeout(() => {
-      setIsSending(false);
-      setIsModalOpen(false);
-      toast.success("¡Correo enviado correctamente!", {
-        description: `Nos pondremos en contacto contigo pronto.`,
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${GMAIL_ADDRESS}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: "Nuevo mensaje desde la página web de TAGUARTECH",
+          _template: "table",
+          Nombres: formData.nombres,
+          Apellidos: formData.apellidos,
+          Correo_Remitente: formData.correo,
+          Mensaje: formData.descripcion,
+        }),
       });
-      setFormData({ nombres: "", apellidos: "", correo: "", descripcion: "" });
-      setOpen(false);
-    }, 1500);
+
+      if (response.ok) {
+        setIsSending(false);
+        setIsModalOpen(false);
+        toast.success("¡Correo enviado correctamente!", {
+          description: `Nos pondremos en contacto contigo pronto.`,
+        });
+        setFormData({ nombres: "", apellidos: "", correo: "", descripcion: "" });
+        setOpen(false);
+      } else {
+        throw new Error("Error en la respuesta del servidor");
+      }
+    } catch (error) {
+      console.error(error);
+      setIsSending(false);
+      toast.error("Error al enviar el correo", {
+        description: "Por favor, inténtalo de nuevo más tarde o revisa tu conexión.",
+      });
+    }
   };
 
   return (

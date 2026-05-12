@@ -42,7 +42,7 @@ export function Header() {
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/" className="text-2xl font-bold text-[#3E2723] tracking-wider">
-            TAGUARTECH
+            TAGUARTE-CH
           </Link>
         </div>
 

@@ -10,7 +10,7 @@ export function Footer() {
           href="/"
           className="text-2xl font-bold tracking-widest text-white uppercase"
         >
-          TAGUARTECH
+          TAGUARTE-CH
         </Link>
 
         {/* Tagline */}
@@ -48,7 +48,7 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row items-center gap-4 text-xs text-[#F9F6F0]/40">
-          <p>© {new Date().getFullYear()} Taguartech. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Taguarte-CH. Todos los derechos reservados.</p>
           <div className="flex gap-4">
             <Link href="#" className="hover:text-white transition-colors">Privacidad</Link>
             <Link href="#" className="hover:text-white transition-colors">Términos</Link>

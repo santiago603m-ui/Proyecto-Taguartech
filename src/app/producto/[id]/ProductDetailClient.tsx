@@ -37,7 +37,7 @@ export default function ProductDetailClient({ id }: { id: string }) {
   }
 
   const whatsappText = encodeURIComponent(
-    `Hola TAGUARTECH, estoy interesado/a en la pieza *${product.name}* (${product.price}). ¿Está disponible?`
+    `Hola TAGUARTE-CH, estoy interesado/a en la pieza *${product.name}* (${product.price}). ¿Está disponible?`
   );
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappText}`;
   const related = products.filter((p) => p.material === product.material && p.id !== product.id).slice(0, 3);
