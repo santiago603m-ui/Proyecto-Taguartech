@@ -6,11 +6,13 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative w-full h-[85vh] min-h-[600px] flex items-center pt-20 overflow-hidden ">
+    <section className="relative w-full min-h-screen lg:h-[90vh] flex items-center pt-20 pb-16 lg:py-20 overflow-hidden ">
+
+
       {/* Background container - global bg */}
       <div className="absolute inset-0 bg-[#fae6b6] " />
 
-      <div className="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
+      <div className="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center ">
         {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -18,10 +20,11 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-xl text-center md:text-left mx-auto md:mx-0"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-title leading-[1.1] mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-title leading-[1.1] mb-4 md:mb-6">
             Naturaleza en <br className="hidden sm:block" /> Forma y Alma
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-moss/80 mb-8 leading-relaxed">
+
+          <p className="text-base sm:text-lg md:text-xl text-moss/80 mb-6 md:mb-8 leading-relaxed">
             Descubre piezas únicas talladas a mano. Unimos el
             arte tradicional con el diseño contemporáneo a
             través de tagua, madera y hueso.
@@ -36,6 +39,7 @@ export function Hero() {
             </Link>
           </div>
         </motion.div>
+
 
         {/* Image Content */}
         <motion.div

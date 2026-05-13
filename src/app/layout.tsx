@@ -16,10 +16,13 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "Taguarte-CH — Innovación y Tecnología",
-    template: "%s | Taguarte-CH",
+    default: "%s - Taguarte-CH",
+    template: "%s",
   },
   description: "Expertos en soluciones tecnológicas innovadoras, desarrollo de software y servicios digitales de alta calidad.",
+  icons: {
+    icon: "/assets/Logo_Mano.png",
+  },
   openGraph: {
     title: "Taguarte-CH",
     description: "Expertos en soluciones tecnológicas innovadoras.",
@@ -36,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${montserrat.variable} font-sans antialiased`}>
-        <div className="min-h-screen bg-[#F9F6F0] font-sans selection:bg-[#606C38]/20 selection:text-[#3E2723]">
+        <div className="min-h-screen bg-[#F9F6F0] font-sans selection:bg-[#606C38]/20 selection:text-[#3E2723] ">
           <Header />
           <main>{children}</main>
           <Footer />

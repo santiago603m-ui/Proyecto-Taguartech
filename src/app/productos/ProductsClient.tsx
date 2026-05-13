@@ -23,7 +23,7 @@ export default function ProductsPage() {
   const filtered = getProductsByMaterial(activeFilter);
 
   return (
-    <div className="pt-24 pb-20 bg-cream min-h-screen">
+    <div className="pt-28 pb-20 bg-cream min-h-screen">
       <div className="container mx-auto px-6 md:px-12">
 
         {/* Page Header */}

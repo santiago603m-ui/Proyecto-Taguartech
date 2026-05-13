@@ -5,8 +5,7 @@ import { useState, useEffect } from "react";
 import { MessageCircle, Mail, X, Send } from "lucide-react";
 import { toast } from "sonner";
 
-// Replace these with your actual contact info
-const WHATSAPP_NUMBER = "1234567890"; // e.g. "573001234567" (country code + number, no + or spaces)
+const WHATSAPP_NUMBER = "1234567890";
 const GMAIL_ADDRESS = "santiago603m@gmail.com";
 
 export function FloatingButtons() {

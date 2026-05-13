@@ -32,19 +32,21 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "backdrop-blur-md bg-[#F9F6F0]/85 shadow-sm border-b border-[#5D4037]/10 py-3"
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+        isScrolled || isMobileMenuOpen
+          ? "backdrop-blur-xl bg-[#F9F6F0]/70 shadow-[0_8px_32px_rgba(0,0,0,0.05)] border-b border-white/40 py-3"
           : "bg-transparent py-5"
-      }`}
+      } ${!isScrolled && !isMobileMenuOpen ? "bg-transparent md:bg-transparent" : ""}`}
     >
+
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <Link href="/" className="text-2xl font-bold text-[#3E2723] tracking-wider">
+          <Link href="/" className="text-xl md:text-2xl font-bold text-[#3E2723] tracking-wider">
             TAGUARTE-CH
           </Link>
         </div>
+
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">

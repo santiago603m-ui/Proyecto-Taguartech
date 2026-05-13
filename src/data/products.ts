@@ -25,7 +25,7 @@ export const products: Product[] = [
     priceNum: 120000,
     badge: "Artesanal",
     image:
-      "https://images.unsplash.com/photo-1756792339125-51edbdb03c74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwaGFuZG1hZGUlMjBuZWNrbGFjZXxlbnwxfHx8fDE3Nzc5MDE0MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "/Assets/Tagua_Catira.jpeg",
     description:
       "El Collar Origen nace de la unión perfecta entre la tagua —el marfil vegetal de nuestros bosques húmedos— y el brillo eterno de la plata 925. Cada semilla es seleccionada a mano y tallada por nuestros artesanos, revelando una textura única que ninguna pieza puede replicar. Es joyería viva, cargada de historia natural.",
     shortDescription: "Semillas de tagua talladas a mano engarzadas en plata 925.",
@@ -47,7 +47,7 @@ export const products: Product[] = [
     priceNum: 65000,
     badge: "Nuevo",
     image:
-      "https://images.unsplash.com/photo-1611652022419-a9419f74343d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "/Assets/Colibri_Dos_Costados.jpg",
     description:
       "Aretes de tagua tallada en forma de luna creciente. Ligeros como una pluma, ideales para el uso diario. Cada par proviene de una semilla diferente, por lo que el tono y la veta varían levemente, haciendo de cada conjunto una pieza irrepetible.",
     shortDescription: "Forma de luna creciente en tagua pulida, ligeros y únicos.",
@@ -69,7 +69,7 @@ export const products: Product[] = [
     priceNum: 45000,
     badge: "Artesanal",
     image:
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "/Assets/Orquidea_Dos_Costados.jpg",
     description:
       "Pulsera de cuentas de tagua teñidas con pigmentos naturales derivados de plantas y minerales de la región. Cada cuenta es pulida individualmente antes de ser ensamblada. Los tonos tierra evocan el suelo del bosque y la riqueza mineral de nuestra tierra.",
     shortDescription: "Cuentas de tagua teñidas con pigmentos naturales de la región.",
@@ -93,7 +93,7 @@ export const products: Product[] = [
     priceNum: 185000,
     badge: "Único",
     image:
-      "https://images.unsplash.com/photo-1559132893-0cc008992e49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYW5kbWFkZSUyMHdvb2RlbiUyMGJvd2x8ZW58MXx8fHwxNzc3OTAxNDIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "/Assets/Cuadro.jpeg",
     description:
       "Cuenco tallado a mano desde un solo bloque de madera noble rescatada de troncos caídos en bosques locales. La forma orgánica sigue las vetas naturales de la madera, creando un objeto funcional y escultórico al mismo tiempo. Acabado con aceite de linaza puro, seguro para alimentos.",
     shortDescription: "Cuenco de un solo bloque, siguiendo las vetas naturales de la madera.",
@@ -115,7 +115,7 @@ export const products: Product[] = [
     priceNum: 350000,
     badge: "Edición Limitada",
     image:
-      "https://images.unsplash.com/photo-1759365873954-210b38481d2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBzY3VscHR1cmUlMjBjcmFmdHxlbnwxfHx8fDE3Nzc5MDE0MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "/Assets/Talleres_3.png",
     description:
       "Escultura figurativa inspirada en la fauna local, tallada directamente sobre un tronco de madera con herramientas de gubia y formón. Cada pieza requiere entre 40 y 80 horas de trabajo artesanal. Es una obra de arte destinada a ser el punto focal de cualquier espacio interior.",
     shortDescription: "Escultura figurativa tallada en madera, entre 40–80 horas de trabajo.",
@@ -137,7 +137,7 @@ export const products: Product[] = [
     priceNum: 210000,
     badge: "Nuevo",
     image:
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "/Assets/Bandeja_Copas.jpg",
     description:
       "Bandeja rectangular tallada en madera de guayacán, una de las maderas más nobles y resistentes de la región. Las asas están integradas al cuerpo de la pieza, talladas en la misma tabla. Perfecta para servir o como elemento decorativo en la mesa.",
     shortDescription: "Bandeja de guayacán con asas integradas, resistente y elegante.",
@@ -159,7 +159,7 @@ export const products: Product[] = [
     priceNum: 480000,
     badge: "Artesanal",
     image:
-      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "/Assets/Imagen_Corpo.jpeg",
     description:
       "Lámpara de mesa fabricada sobre una raíz de árbol seleccionada por su forma orgánica y volumen escultórico. La instalación eléctrica es completamente segura con cable textil y portalámparas de cerámica. Un objeto que fusiona la naturaleza bruta con el diseño de interiores contemporáneo.",
     shortDescription: "Raíz natural convertida en lámpara de mesa con cable textil.",
@@ -183,7 +183,7 @@ export const products: Product[] = [
     priceNum: 95000,
     badge: "Nuevo",
     image:
-      "https://images.unsplash.com/photo-1721103418180-bcaec5a0691a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYW5kY3JhZnRlZCUyMGFydGlzYW4lMjByaW5nfGVufDF8fHx8MTc3NzkwMTQyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "/Assets/Imagen_Corpo_2.jpeg",
     description:
       "Anillo con incrustación de ébano sobre base de hueso natural, pulido a mano con papel de lija progresivo hasta alcanzar un acabado casi espejado. La combinación de dos materiales orgánicos crea un contraste visual poderoso entre el blanco nacarado del hueso y el negro profundo del ébano.",
     shortDescription: "Incrustación de ébano en hueso natural, pulido a espejo.",
@@ -205,7 +205,7 @@ export const products: Product[] = [
     priceNum: 75000,
     badge: "Artesanal",
     image:
-      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "/Assets/Imagen_Corpo_3.jpg",
     description:
       "Colgante tallado en hueso con motivos geométricos inspirados en la iconografía precolombina de la región. El grabado es realizado a mano con buril de precisión, creando relieves finos y texturas que cambian con la luz. Viene en cordón de cuero natural ajustable.",
     shortDescription: "Motivos geométricos precolombinos grabados a buril sobre hueso.",
@@ -227,7 +227,7 @@ export const products: Product[] = [
     priceNum: 280000,
     badge: "Edición Limitada",
     image:
-      "https://images.unsplash.com/photo-1611953421238-69eb3aab1bdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "/Assets/Ajedrez_Cajonera.jpg",
     description:
       "Set completo de 28 fichas de dominó elaboradas en hueso natural sobre base de bambú, siguiendo la tradición de los dominós de marfil y ébano europeos del siglo XVIII. Los puntos están grabados con láser de precisión y rellenados con pigmento natural negro. Presentado en caja de madera con cierre imantado.",
     shortDescription: "28 fichas de dominó en hueso y bambú, presentadas en caja de madera.",
@@ -249,7 +249,7 @@ export const products: Product[] = [
     priceNum: 130000,
     badge: "Artesanal",
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "/Assets/Colibri_Orquidea.jpg",
     description:
       "Figura de pájaro en vuelo tallada en hueso, capturando el movimiento y la ligereza del ave en un material que paradójicamente evoca solidez y permanencia. La tensión entre peso y vuelo es el corazón conceptual de esta pieza. Ideal como objeto de escritorio o estante.",
     shortDescription: "Pájaro en vuelo tallado en hueso, movimiento y ligereza capturados.",
@@ -271,7 +271,7 @@ export const products: Product[] = [
     priceNum: 160000,
     badge: "Nuevo",
     image:
-      "https://images.unsplash.com/photo-1593618998160-e34014e67546?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "/Assets/Info.jpg",
     description:
       "Cuchillo de cocina con hoja de acero inoxidable forjado y mango tallado en hueso natural. El mango presenta acanaladuras ergonómicas talladas a mano que facilitan el agarre y mejoran el control durante el corte. Una pieza donde la funcionalidad culinaria se eleva a categoría de objeto de diseño.",
     shortDescription: "Hoja forjada en acero inox con mango de hueso acanalado.",

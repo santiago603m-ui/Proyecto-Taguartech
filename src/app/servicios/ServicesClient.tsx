@@ -7,7 +7,7 @@ import { services } from "@/data/services";
 
 export default function ServicesClient() {
   return (
-    <div className="pt-24 pb-20 bg-cream min-h-screen">
+    <div className="pt-28 pb-20 bg-cream min-h-screen">
       {/* Hero */}
       <div className="bg-moss text-cream py-16 mb-12">
         <div className="container mx-auto px-6 md:px-12 text-center">

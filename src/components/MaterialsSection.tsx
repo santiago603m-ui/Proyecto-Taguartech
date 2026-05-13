@@ -10,7 +10,7 @@ const materials = [
     description:
       "Conocida como el marfil vegetal. Semillas recolectadas a mano en los bosques húmedos, ofreciendo una textura suave y un pulido excepcional que respeta el medio ambiente.",
     image:
-      "https://images.unsplash.com/photo-1639020124176-fc515f2676af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYXR1cmFsJTIwc2VlZHMlMjByYXclMjBqZXdlbHJ5fGVufDF8fHx8MTc3NzkwMTQyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "/Assets/Tagua_Catira.jpeg",
   },
   {
     id: "madera",
@@ -18,7 +18,7 @@ const materials = [
     description:
       "Maderas de origen sostenible y maderas rescatadas. Seleccionamos cuidadosamente piezas con vetas únicas que cuentan su propia historia a través de años de crecimiento.",
     image:
-      "https://images.unsplash.com/photo-1651154441963-6935e41dfbaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb2xpc2hlZCUyMHdvb2QlMjB0ZXh0dXJlJTIwYmFja2dyb3VuZHxlbnwxfHx8fDE3Nzc5MDE0MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "/Assets/Cuadro.jpeg",
   },
   {
     id: "hueso",
@@ -26,7 +26,7 @@ const materials = [
     description:
       "Una tradición milenaria reinterpretada. Transformamos subproductos naturales en obras de arte detalladas mediante técnicas de tallado de alta precisión.",
     image:
-      "https://images.unsplash.com/photo-1657582649903-0e3890a85829?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJ2ZWQlMjBib25lJTIwaGFuZG1hZGUlMjBjcmFmdHxlbnwxfHx8fDE3Nzc5MDE0MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "/Assets/Rostro_Mano.jpeg",
   },
 ];
 

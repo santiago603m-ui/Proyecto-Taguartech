@@ -42,7 +42,7 @@ export default function ProductDetailClient({ id }: { id: string }) {
   const related = products.filter((p) => p.material === product.material && p.id !== product.id).slice(0, 3);
 
   return (
-    <div className="pt-24 pb-20 bg-cream min-h-screen">
+    <div className="pt-28 pb-20 bg-cream min-h-screen">
       <div className="container mx-auto px-6 md:px-12">
 
         {/* Breadcrumb */}

@@ -33,25 +33,25 @@ const processSteps = [
     step: "01",
     title: "Selección de Materia Prima",
     desc: "Recorremos bosques y comunidades para encontrar las mejores semillas de tagua, maderas nobles y huesos de origen natural.",
-    image: "https://images.unsplash.com/photo-1639020124176-fc515f2676af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+    image: "/Assets/Imagen_Corpo.jpeg",
   },
   {
     step: "02",
     title: "Diseño y Boceto",
     desc: "Cada pieza nace como un dibujo a mano. El artesano traza la forma que siente en el material antes de poner una herramienta sobre él.",
-    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+    image: "/Assets/Imagen_Corpo_2.jpeg",
   },
   {
     step: "03",
     title: "Tallado Artesanal",
     desc: "Con gubias, formones y lijas progresivas, el artesano da forma a la pieza respetando las vetas y texturas naturales del material.",
-    image: "https://images.unsplash.com/photo-1767231388473-720fede29d09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+    image: "/Assets/Nosotros_Imagen_3.jpeg",
   },
   {
     step: "04",
     title: "Acabado y Entrega",
     desc: "Pulido, encerado y control de calidad final. La pieza se empaca en materiales reciclados y viaja hacia su nuevo hogar.",
-    image: "https://images.unsplash.com/photo-1559132893-0cc008992e49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+    image: "/Assets/Nosotros_Imagen_2.jpg",
   },
 ];
 
@@ -64,7 +64,7 @@ const stats = [
 
 export default function AboutClient() {
   return (
-    <div className="pt-24 bg-cream min-h-screen">
+    <div className="pt-28 bg-cream min-h-screen">
 
       {/* Hero */}
       <section className="py-16 container mx-auto px-6 md:px-12">
@@ -97,7 +97,7 @@ export default function AboutClient() {
           >
             <div className="rounded-3xl overflow-hidden shadow-2xl h-[480px] relative">
               <Image
-                src="https://images.unsplash.com/photo-1767231388473-720fede29d09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                src="/Assets/Nosotros_Imagen.jpg"
                 alt="Artesano en el taller"
                 fill
                 className="object-cover"
