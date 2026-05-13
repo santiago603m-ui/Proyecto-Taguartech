@@ -56,7 +56,7 @@ export function MaterialsSection() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {materials.map((material, index) => (
             <motion.div
               key={material.id}
@@ -64,30 +64,31 @@ export function MaterialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.2, duration: 0.6 }}
-              className="group flex flex-col md:flex-row bg-[#F9F6F0] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border-2 border-earth/10"
+              className="group flex flex-col bg-[#F9F6F0] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border-2 border-earth/10"
             >
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-64 sm:h-56 md:h-64 overflow-hidden relative">
                 <Image
                   src={material.image}
                   alt={material.title}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="p-8 flex-1 flex flex-col">
                 <h3
-                  className="text-2xl font-bold text-title mb-4"
+                  className="text-xl md:text-2xl font-bold text-title mb-4"
                 >
                   {material.title}
                 </h3>
-                <p className="text-title/70 text-lg">
+                <p className="text-title/70 text-base md:text-lg">
                   {material.description}
                 </p>
               </div>
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );

@@ -109,12 +109,12 @@ export default function AboutClient() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-[90%] bg-white rounded-2xl shadow-xl p-5 grid grid-cols-4 gap-2 z-10"
+              className="absolute -bottom-10 md:-bottom-6 left-1/2 -translate-x-1/2 w-[90%] bg-white rounded-2xl shadow-xl p-6 md:p-5 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 z-10"
             >
               {stats.map((s) => (
                 <div key={s.num} className="text-center">
-                  <p className="text-earth font-bold text-xl">{s.num}</p>
-                  <p className="text-moss/70 text-[10px] leading-tight">{s.label}</p>
+                  <p className="text-earth font-bold text-xl md:text-2xl">{s.num}</p>
+                  <p className="text-moss/70 text-[10px] md:text-xs uppercase tracking-wider leading-tight">{s.label}</p>
                 </div>
               ))}
             </motion.div>
@@ -123,13 +123,13 @@ export default function AboutClient() {
       </section>
 
       {/* Values */}
-      <section className="py-16 bg-white mt-8">
+      <section className="py-20 bg-white mt-12">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="text-center mb-14">
+          <div className="text-center mb-16">
             <span className="text-earth font-semibold tracking-wider text-sm uppercase mb-2 block">Lo que nos guía</span>
-            <h2 className="text-2xl md:text-3xl font-bold text-title">Nuestros Valores</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-title">Nuestros Valores</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((v, i) => {
               const Icon = v.icon;
               return (
@@ -139,13 +139,13 @@ export default function AboutClient() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.12 }}
-                  className="bg-white border-2 border-earth/10 rounded-2xl p-7 shadow-xl hover:shadow-2xl transition-all duration-300"
+                  className="bg-white border-2 border-earth/10 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-[#606C38]/10 text-[#606C38] flex items-center justify-center mb-5">
-                    <Icon size={22} strokeWidth={1.5} />
+                  <div className="w-14 h-14 rounded-xl bg-[#606C38]/10 text-[#606C38] flex items-center justify-center mb-6">
+                    <Icon size={26} strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-[#3E2723] font-bold mb-3">{v.title}</h3>
-                  <p className="text-[#5D4037] text-sm leading-relaxed">{v.desc}</p>
+                  <h3 className="text-xl font-bold text-[#3E2723] mb-3">{v.title}</h3>
+                  <p className="text-[#5D4037] text-base leading-relaxed">{v.desc}</p>
                 </motion.div>
               );
             })}
@@ -154,14 +154,14 @@ export default function AboutClient() {
       </section>
 
       {/* Process */}
-      <section className="py-16 bg-[#F9F6F0]">
+      <section className="py-20 bg-[#F9F6F0]">
         <div className="container mx-auto px-6 md:px-12 ">
-          <div className="text-center mb-14">
+          <div className="text-center mb-16">
             <span className="text-earth font-semibold tracking-wider text-sm uppercase mb-2 block">Cómo trabajamos</span>
-            <h2 className="text-2xl md:text-3xl font-bold text-title">Nuestro Proceso</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-title">Nuestro Proceso</h2>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+        <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 ">
           {processSteps.map((step, i) => (
             <motion.div
               key={step.step}
@@ -169,25 +169,26 @@ export default function AboutClient() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group flex gap-6 bg-white rounded-2xl overflow-hidden border-2 border-earth/10 shadow-xl hover:shadow-2xl transition-all duration-300"
+              className="group flex flex-col sm:flex-row gap-6 bg-white rounded-3xl overflow-hidden border-2 border-earth/10 shadow-xl hover:shadow-2xl transition-all duration-300"
             >
-              <div className="w-32 shrink-0 overflow-hidden relative">
+              <div className="w-full sm:w-40 h-48 sm:h-auto shrink-0 overflow-hidden relative">
                 <Image
                   src={step.image}
                   alt={step.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <div className="py-6 pr-6 flex flex-col justify-center">
-                <span className="text-[#BC6C25] font-bold text-3xl leading-none mb-2">{step.step}</span>
-                <h3 className="text-[#3E2723] font-bold mb-2">{step.title}</h3>
-                <p className="text-[#5D4037] text-sm leading-relaxed">{step.desc}</p>
+              <div className="p-8 flex flex-col justify-center">
+                <span className="text-[#BC6C25] font-bold text-4xl leading-none mb-3">{step.step}</span>
+                <h3 className="text-xl font-bold text-[#3E2723] mb-3">{step.title}</h3>
+                <p className="text-[#5D4037] text-base leading-relaxed">{step.desc}</p>
               </div>
             </motion.div>
           ))}
         </div>
       </section>
+
 
       {/* CTA */}
       <section className="pb-16 container mx-auto px-6 md:px-12">

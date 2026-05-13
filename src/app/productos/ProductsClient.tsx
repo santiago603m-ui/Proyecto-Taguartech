@@ -50,30 +50,32 @@ export default function ProductsPage() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
-          className="flex items-center gap-3 mb-10 flex-wrap"
+          className="flex flex-col sm:flex-row sm:items-center gap-4 mb-10"
         >
-          <span className="flex items-center gap-1.5 text-moss/70 text-sm font-medium mr-2">
-            <Filter size={15} /> Filtrar:
-          </span>
-          {filters.map((f) => (
-            <button
-              key={f}
-              onClick={() => setActiveFilter(f)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
-                activeFilter === f
-                  ? "bg-moss text-cream shadow-md"
-                  : "bg-white text-moss/70 border border-moss/20 hover:border-moss/40"
-              }`}
-            >
-              {f}
-              {f !== "Todos" && (
-                <span className="ml-1.5 opacity-60 text-xs">
-                  ({products.filter((p) => p.material === f).length})
-                </span>
-              )}
-            </button>
-          ))}
-          <span className="ml-auto text-moss/60 text-sm hidden md:block">
+          <div className="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0 no-scrollbar">
+            <span className="flex items-center gap-1.5 text-moss/70 text-sm font-medium whitespace-nowrap mr-2">
+              <Filter size={15} /> Filtrar:
+            </span>
+            {filters.map((f) => (
+              <button
+                key={f}
+                onClick={() => setActiveFilter(f)}
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap ${
+                  activeFilter === f
+                    ? "bg-moss text-cream shadow-md"
+                    : "bg-white text-moss/70 border border-moss/20 hover:border-moss/40"
+                }`}
+              >
+                {f}
+                {f !== "Todos" && (
+                  <span className="ml-1.5 opacity-60 text-xs">
+                    ({products.filter((p) => p.material === f).length})
+                  </span>
+                )}
+              </button>
+            ))}
+          </div>
+          <span className="ml-auto text-moss/60 text-sm hidden sm:block">
             {filtered.length} {filtered.length === 1 ? "pieza" : "piezas"}
           </span>
         </motion.div>
@@ -90,23 +92,24 @@ export default function ProductsPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-20 rounded-3xl bg-moss text-cream p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-6"
+          className="mt-20 rounded-3xl bg-moss text-cream p-8 md:p-14 flex flex-col lg:flex-row items-center lg:justify-between gap-8 text-center lg:text-left"
         >
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-2">
+          <div className="max-w-xl">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
               ¿Buscas algo especial?
             </h2>
-            <p className="text-[#F9F6F0]/70 max-w-md">
-              Diseñamos piezas a medida. Cuéntanos tu idea y un artesano te contactará.
+            <p className="text-[#F9F6F0]/70 text-lg">
+              Diseñamos piezas a medida. Cuéntanos tu idea y un artesano te contactará para hacerla realidad.
             </p>
           </div>
           <button
             onClick={() => window.dispatchEvent(new CustomEvent("open-email-modal"))}
-            className="shrink-0 px-8 py-4 bg-earth text-cream font-medium rounded-full hover:bg-earth/90 transition-all shadow-lg hover:shadow-xl"
+            className="shrink-0 w-full sm:w-auto px-8 py-4 bg-earth text-cream font-bold rounded-full hover:bg-earth/90 transition-all shadow-lg hover:shadow-xl"
           >
             Solicitar pieza a medida
           </button>
         </motion.div>
+
       </div>
     </div>
   );

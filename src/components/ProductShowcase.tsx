@@ -52,15 +52,17 @@ export function ProductShowcase() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               onClick={() => router.push(`/producto/${product.id}`)}
-              className="group relative h-[460px] md:h-[440px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer border-2 border-earth/20"
+              className="group relative aspect-[3/4] sm:aspect-auto sm:h-[480px] md:h-[440px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer border-2 border-earth/20"
             >
               {/* Background Image */}
               <Image
                 src={product.image}
                 alt={product.name}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-108"
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
               />
+
 
               {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a0e0a]/80 via-[#1a0e0a]/20 to-transparent transition-opacity duration-500 group-hover:opacity-90" />
